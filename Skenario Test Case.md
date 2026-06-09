@@ -26,6 +26,7 @@
 | **Expected Result** | MikroTik berhasil memproses autentikasi, mendistribusikan IP ke pelanggan, dan status OLT terdeteksi online pada sistem monitoring web. |
 | **Actual Result** | Berhasil mendapatkan IP address dari MikroTik, koneksi internet aktif, dan status OLT terdeteksi online pada sistem monitoring. |
 | **Status (Pass/Fail)** | PASS |
+|**Remarks/Notes**|Pengecekan IP dapat dilihat pada menu Active Connections di MikroTik.|
 
 ## **2\. NEGATIVE TEST CASE (Jalur Gagal/Penanganan Error)**
 
