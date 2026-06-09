@@ -40,8 +40,8 @@
 |**Test Data**|Username: user\_rumah1, Password: salahpassword123 (Password Salah)|
 |**Steps**|1. Masukkan kredensial PPPoE yang salah pada *router* pelanggan. 2. Coba akses internet dari *router* pelanggan. 3. Pantau log sistem pada MikroTik.|
 |**Expected Result**|Sistem MikroTik secara otomatis menolak permintaan koneksi, internet pelanggan tidak aktif, dan tercatat peringatan *authentication failed* pada sistem log.|
-|**Actual Result**|*(Diisi setelah pengujian dilakukan di lapangan)*|
-|**Status (Pass/Fail)**|*(Diisi setelah pengujian dilakukan di lapangan)*|
+|**Actual Result**|*Sistem menolak akses masuk. Router pelanggan gagal terhubung ke internet (status timeout). Pada log sistem MikroTik muncul peringatan "PPPoE connection authentication failed for user\_rumah1". Sistem router utama tetap berjalan normal dan tidak terjadi crash.*|
+|**Status (Pass/Fail)**|*Statusnya "PASS" karena sistem berhasil/lulus dalam menolak akses yang salah).*|
 |**Remarks/Notes**|Pastikan tidak ada pesan *error* teknis atau *script* yang bocor ke sisi pelanggan.|
 
 ## **3. EDGE CASE (Kasus Ekstrem)**
@@ -57,8 +57,8 @@
 |**Test Data**|Pengujian *download/upload* file ukuran ekstrem secara bersamaan di 5 titik.|
 |**Steps**|1. Pastikan redaman di 5 ODP berada di angka mendekati -24 dBm (menggunakan OPM/OTDR). 2. Lakukan *speedtest* dan *continuous ping* pada kelima rumah sampel pelanggan secara bersamaan selama 10 menit.|
 |**Expected Result**|Sistem tetap stabil (MikroTik/OLT tidak *hang*), kecepatan internet tetap sesuai paket layanan (tidak terputus total), dan *packet loss* sangat minim (wajar).|
-|**Actual Result**|*Pengujian download serentak selama 10 menit berjalan lancar. Hasil ping ke DNS Google tetap stabil di kisaran 15-20ms. CPU Load MikroTik RB4011 naik hingga 65% namun tidak hang, dan packet loss tercatat sangat kecil (< 1%).*|
-|**Status (Pass/Fail)**|*Pass*|
+|**Actual Result**|*(Diisi setelah pengujian dilakukan di lapangan)*|
+|**Status (Pass/Fail)**|*(Diisi setelah pengujian dilakukan di lapangan)*|
 |**Remarks/Notes**|Pemantauan CPU dan RAM *Load* pada MikroTik RB4011 selama proses uji coba.|
 
 
