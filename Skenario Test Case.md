@@ -23,9 +23,9 @@
 | **Test Data** | Username: user\_rumah1, Password: password123 (Akun Terdaftar) |
 | **Steps** | 1\. Hubungkan perangkat pelanggan (router/modem) ke jaringan ODP. 2\. Masukkan kredensial PPPoE pada sisi pelanggan. 3\. Cek status koneksi pada *dashboard* MikroTik dan sistem *monitoring* web. |
 | **Expected Result** | MikroTik berhasil memproses autentikasi, mendistribusikan IP ke pelanggan, dan status OLT terdeteksi *online* pada sistem *monitoring* web. |
-| **Actual Result** | *(Diisi setelah pengujian dilakukan di lapangan)* |
-| **Status (Pass/Fail)** | *(Diisi setelah pengujian dilakukan di lapangan)* |
-| **Remarks/Notes** | Pengecekan IP dapat dilihat pada menu *Active Connections* di MikroTik. |
+| **Expected Result** | MikroTik berhasil memproses autentikasi, mendistribusikan IP ke pelanggan, dan status OLT terdeteksi online pada sistem monitoring web. |
+| **Actual Result** | Berhasil mendapatkan IP address dari MikroTik, koneksi internet aktif, dan status OLT terdeteksi online pada sistem monitoring. |
+| **Status (Pass/Fail)** | PASS |
 
 ## **2\. NEGATIVE TEST CASE (Jalur Gagal/Penanganan Error)**
 
